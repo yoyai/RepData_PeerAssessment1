@@ -146,7 +146,7 @@ library(ggplot2)
 
 both$end <- as.factor(both$end)
 g <- ggplot(both, aes(x=interval, y=steps))
-g + geom_line() + facet_wrap( ~ end, ncol=1) + labs(x="Time", y=" 5 min interval") + ggtitle("Steps averaged across 2012-10-01 to 11-30, by Weekday vs. Weekend")
+g + geom_line() + facet_wrap( ~ end, ncol=1) + labs(x="Time (5 min interval)", y="Steps") + ggtitle("Steps averaged across 2012-10-01 to 11-30, by Weekday vs. Weekend")
 
 ```
 
